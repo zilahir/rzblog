@@ -5,8 +5,6 @@ tags:
 categories: [finnország, hun]
 date: 2018-05-20 09:59:00
 ---
-# 10 utálatos dolog finnországban
-
 ## 2. javított kiadás.
 
 
@@ -81,7 +79,7 @@ _"[...] főleg nem sötétben. Vidéki lány vagyok, de a természet és a váro
 
 Finnország a világ egyik legbiztonságosabb országa. Itt nem kell tartanod ilyesmitől. Mondanám, hogy ne félj legközelebb, ha jössz, de ne gyere.
 
-{% asset_img termeszet.jpg %}
+![Természet](./termeszet.jpg)
 
 ## Ünnepek
 
@@ -108,7 +106,7 @@ Tekintve az árdifferenciát Magyarország, és Finnország között, napi 3 eur
 
 Amennyire tudom az egyetemi étkezés egységes az országban. Olyannyira, hogy a diákigazolványoddal az ország bármelyik egyetemén ebédelhetsz. Amennyire emlékszem, az otthoni menza minőségét butaság lenne egy napon említeni az ittenivel. Ráadásul az ára is mintha háromszorosa lenne. Ki érti ezt?
 
-{% asset_img ebed.jpg %}
+![Ebéd az egyetemen](./ebed.jpg)
 
 ## Közlekedés
 

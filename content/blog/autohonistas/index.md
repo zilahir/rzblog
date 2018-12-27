@@ -6,7 +6,8 @@ tags:
 categories: [finnország, hun]
 thumbnail: ./../images/plates.jpg
 ---
-#Hogyan írassunk át magyar autót Finnországban?
+
+##Hogyan írassunk át magyar autót Finnországban?
 
 Finnországban, egy másik EU-s tagországban forgalomba helyezett autót, 6+6 hónapig lehet adó és vámmentesen használni. Ezután kell elkezdeni, az egyébként rövidnek, olcsónak, és fájdalommentesnek sem nevezhető folyamatot. 
 

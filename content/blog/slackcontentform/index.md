@@ -6,7 +6,6 @@ tags:
 categories: [coding]
 thumbnail: ./../images/slack.jpg
 ---
-# Connect contact form to Slack channel
 
 Having a contact form on a landing page is like the basic accessories every webpage is having.
 The ordinary way handling this is to connect the form to an email address, and wait for the incomes. Since it's easy to tag up the emails with labels, such as "contact form" or anything, it's just an other email you have to take care of inbox. Using separate email address is also not too efficient, it's just makes you follow another account, and so.
