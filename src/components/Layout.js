@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import Social from './Social';
 import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
@@ -66,6 +66,7 @@ class Layout extends React.Component {
         {children}
         <footer>
           2018, <a href="https://richardzilahi.hu">richardzilahi</a>.
+          <Social />
         </footer>
       </div>
     )

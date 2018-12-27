@@ -1,21 +1,28 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-
+import styled from 'styled-components'
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
+const PostContainer = styled.div`
+      color: initial;
+      h2 {
+        color: #ff69b4;
+      }
+    `;
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-
+    const { previous, next } = this.props.pageContext    
+    
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 style={{color: `#ff69b4`}}>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -26,7 +33,9 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <PostContainer>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </PostContainer>
         <hr
           style={{
             marginBottom: rhythm(1),
