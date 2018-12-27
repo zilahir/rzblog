@@ -2,7 +2,6 @@
 title: 10 utálatos dolog Finnországban
 tags:
   - 'finnország, suomi'
-thumbnail: ./../images/suomi.jpg
 categories: [finnország, hun]
 date: 2018-05-20 09:59:00
 ---
@@ -44,7 +43,7 @@ Hát akkor meg mit kellett ezen így meglepődni, hogy a 10 legrosszabb dolog k�
 
 Finnországban a második legjobb dolog az időjárás. Varázslatos a tél, tiszta levegő, gyönyörű tájak, befagyott tavak. -20 fokban is rettentő jól lehet kinnt szórakozni, _grillimakkarát_ sütni, kirándulni, szaunázni. Ja várj, ezekkel is gondod volt.
 
-{% asset_img idojaras.jpg %}
+![Időjárás](./idojaras.jpg)
 
 ## Oktatás
 

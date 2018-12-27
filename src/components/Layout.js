@@ -16,13 +16,14 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            color: `#ff69b4`
           }}
         >
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `inherit`,              
             }}
             to={`/`}
           >
