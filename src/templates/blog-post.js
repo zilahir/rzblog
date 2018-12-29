@@ -11,6 +11,13 @@ const PostContainer = styled.div`
       h2 {
         color: #ff69b4;
       }
+      pre {
+        background-color: #fdfaf6;
+      }
+      code {
+        font-size: 16px;
+        color: #b3568b;
+      }
     `;
 
 class BlogPostTemplate extends React.Component {

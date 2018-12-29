@@ -49,6 +49,6 @@ A finn rendszámunk átvétele előtt van még egy fontos lépés. A kötelező 
 
 A biztosítás megkötése nem igen különbözik attól, amit Magyarországon megszoktunk. Kiválasztjuk a számunkra megfelelőt. Dönthetünk arról, hogy az éves díjat milyen formában fizetjük be. Van negyedéves, féléves, és éves fizetési lehetőség. Nekem a biztosítás évi kb. 500 EUR, de ennek matematikai képlete természetesen hasonló, mint otthon. 
 
-Amint megvan a biztosírás, a fizetési bizonylat ellenében teszik rá a rendszámot az autóra. 
+Amint megvan a biztosítás, a fizetési bizonylat ellenében teszik rá a rendszámot az autóra. 
 
 Kész is. 
