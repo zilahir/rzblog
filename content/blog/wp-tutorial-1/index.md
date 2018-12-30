@@ -117,7 +117,7 @@ Az utóbbit megtaláljuk a plugin directory-ban, keressük is meg, és telepíts
 
 A `WordPress Theme Framework` esetében ismét fel kell ütni a [GitHub](https://github.com/justcoded/wordpress-theme-framework)-ot. 
 
-Menjünk a `wp-content/plugns` folderbe, és cloneozzuk ide a plugint. 
+Menjünk a `wp-content/plugins` folderbe, és cloneozzuk ide a plugint. 
 
 Amint megtörtént, látszódni fog ez a plugin is a listában. 
 
