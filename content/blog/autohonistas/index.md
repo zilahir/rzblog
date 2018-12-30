@@ -11,7 +11,7 @@ thumbnail: ./../images/plates.jpg
 
 Finnországban, egy másik EU-s tagországban forgalomba helyezett autót, 6+6 hónapig lehet adó és vámmentesen használni. Ezután kell elkezdeni, az egyébként rövidnek, olcsónak, és fájdalommentesnek sem nevezhető folyamatot. 
 
-![Rendszámtábláj](./plates.jpg)
+![Rendszámtáblák](./plates.jpg)
 
 Mivel Finnországban sem lehet még EU-s állampolgárként sem 3 hónapnál tovább tartózkodni, akinek ilyen tervei vannak, ígyis-úgyis el kell mennie a _Migri_-be, ahol tartózkodási engedélyt kell igényelni, elmesélni, hogy milyen okból tartózkodik az országban, stb. Ez azért (is) fontos, mert a tartüzkodási engedéllyel együtt kapunk ún. _Henkilötunnus_t, ami lényegében a személyiigazolványuk száma lesz, és ami nélkül még egy internet előfizetést sem tudunk intézni egyébként. 
 
