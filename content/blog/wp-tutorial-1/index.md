@@ -40,7 +40,7 @@ Csináluk meg a folder struktúrát a projekthez.
 `touch docker-compose.yml`
 `code docker-compose.yml`
 
-Csináltam egy docker-compose fájlt, (ezen)[] a github gisten megtaláljátok. 
+Csináltam egy docker-compose fájlt, [ezen](https://gist.github.com/zilahir/2582c1490c54e2d41a1c0754a54ce7d8) a github gisten megtaláljátok. 
 
 Copy paste az imént létrehozott `.yml` fájlba, aztán irány a terminal, és építsük meg a docker containereket. 
 
