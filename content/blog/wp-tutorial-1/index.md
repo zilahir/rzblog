@@ -189,7 +189,7 @@ Először is [webpack](https://webpack.js.org/).
 
 ![Webpack installed](./images/webpackinstalled.png)
 
-Ezután szüksgünk lesz a (`Path`)[] névre keresztelt modulra, hogy a `webpack`-kel tudjunk fájlokat pakolgatni ide oda. 
+Ezután szüksgünk lesz a [`Path`)](https://www.npmjs.com/package/path) névre keresztelt modulra, hogy a `webpack`-kel tudjunk fájlokat pakolgatni ide oda. 
 
 `npm i --save-dev path`.
 
@@ -197,7 +197,7 @@ Ezután szüksgünk lesz a (`Path`)[] névre keresztelt modulra, hogy a `webpack
 
 Pl [babel](https://babeljs.io/), ami egy js compiler, különböző modulok a `SASS` compilerhez, pl.: `node-sass`, `sass-loader`, `css-loader`, `style-loader`, `node-sass`, és [`autoprefixer`](https://www.npmjs.com/package/autoprefixer), ami a `vendor` értékeket adja hozzá a css-hez a [Can I Use](https://caniuse.com/) táblázatai alapján. 
 
-`npm i --save-dev babel-loader babel-loader@7 babel-preset-stage-2 @babel/core style-loader css-loader sass-loader extract-loader postcss-loader, node-sass, autoprefixer, file-loader, extract-loader. babel-preset-env, @babel/preset-env`. 
+`npm i --save-dev babel-loader babel-loader@7 @babel/core style-loader css-loader sass-loader extract-loader postcss-loader, node-sass, autoprefixer, file-loader, extract-loader, @babel/preset-env`. 
 
 Most pedig hozzunk létre fájlokat a `SASS`-hoz. 
 
