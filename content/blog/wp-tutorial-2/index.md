@@ -487,8 +487,6 @@ Az előbb már létrehoztunk egy `dummy.txt`-t tesztelésre, így ne hozzunk lé
 
 `vi dummy.txt`
 
-(kép a fájlról ahogy bele van írva a dummy text)
-
 Írjunk bele valami szöveget, mentsünk el, lépjünk ki, és nézzük meg `git status`-al, hogy van-e bármit is komittolni. 
 
 ![sql not empty](./images/dummy_modified.png)
