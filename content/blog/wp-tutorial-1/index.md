@@ -488,6 +488,4 @@ Amit eltudok mondani, hogy számomra ez miért előny:
 
 Egy komolyabb wordpress-es weboldal kódja nagyon könnyen túlnőhet rajtunk, könnyen kerülhetünk olyan helyzetbe a nem minifájolt css elérheti a huszon akárhányezer sort, és akkor még a view partialsokról nem is beszéltünk. Én azért szeretem ezt a megközelítést, mert tiszta, rendezett, és ezáltal átlátható. Nem lesz millió js meg css behúzva a headerbe ami mindenféle plugink hozadéka. Egy zöldmezős WP projektben mindent érdemes magadnak lefeleszteni, mert úgy lesz a legkisebb a kompromisszum a végére. A webpack előnye meg azontúl, hogy a fejlesztő irányít mindent, hogy használható az ES6 nyújtotta előnyök, meg lehet válni a jquery-től, és könnyen menedzselhető vele mindne féle 3rd party module, amiket szeretnénk.
 
-A következő részben [gatsbyJS](https://www.gatsbyjs.org/)-el, és Reacttal fogunk megnézni egy wordpress szájt építését. 
-
-Ha van kérdés, javaslat, dobjatok egy [emailt](mailto:zilahi@gmail.com), vagy írjatok [twitteren](https://twitter.com/zilahy)
+Ha van kérdés, javaslat, dobjatok egy [emailt](mailto:zilahi@gmail.com), vagy írjatok [twitteren](https://twitter.com/zilahy).
