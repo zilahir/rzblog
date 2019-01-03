@@ -542,7 +542,7 @@ Tehát, amit itt csinálunk kell az ismét 2 dolog
 
 Essünk neki. 
 
-Természetesen a már megszokott módon, a `pipeline` config fájl megtalálható `[gist]`()-ben, de vegyük sorról sorra: 
+Természetesen a már megszokott módon, a `pipeline` config fájl megtalálható [`gist`](https://gist.github.com/zilahir/76642a8dfbaa62ffd36e597c2448c5cc)-ben, de vegyük sorról sorra: 
 
 ```
 pipelines: 
