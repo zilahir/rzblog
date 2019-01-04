@@ -6,7 +6,7 @@ tags:
 categories: [coding]
 ---
 
-Az [előző](https://blog.richardzilahi.hu/wp-tutorial-1/) összeraktunk egy wordpress fejlesztői környezetet, docker containerrel, webpack-el, MVC patternnel. 
+Az [előző](https://blog.richardzilahi.hu/wp-tutorial-1/) részben összeraktunk egy wordpress fejlesztői környezetet, docker containerrel, webpack-el, MVC patternnel. 
 
 Ebben a posztban pedig összerakunk egy staging körenyezetet, amin az ügyfélnek tudjuk prezentálni a mile stoneokat. 
 
