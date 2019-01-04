@@ -135,7 +135,7 @@ utóbbinak pedig:
 ```
 { 
     "require": {
-    "php": "^5.3 || ^7.0"   
+    "php": "7.3"   
     } 
 }
 ```
