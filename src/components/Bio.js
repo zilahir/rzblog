@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import ZilahirProfile from './images/me.jpg';
 import { rhythm } from '../utils/typography'
-import Project from './Project';
 
 function Bio() {
   return (
@@ -26,13 +25,16 @@ function Bio() {
                 widht: `50px`,
                 height: `50px`}}
             />
-            <p>
+            <p style={{margin: `0`}}>
               Written by <strong>{author}</strong> who lives and works in Helsinki, Finland
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>                
-                I do tweet
-              </a>
-            </p>            
+                I do tweet.
+              </a>              
+              <span style={{marginLeft: `10px`}}>
+              Do you have a project for me? Drop me an <a href="mailto:zilahi@gmail.com">email</a>.
+              </span>
+            </p>              
           </div>
         )
       }}
