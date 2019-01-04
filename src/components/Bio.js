@@ -2,8 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import ZilahirProfile from './images/me.jpg';
-
 import { rhythm } from '../utils/typography'
+import Project from './Project';
 
 function Bio() {
   return (
@@ -32,7 +32,7 @@ function Bio() {
               <a href={`https://twitter.com/${social.twitter}`}>                
                 I do tweet
               </a>
-            </p>
+            </p>            
           </div>
         )
       }}
