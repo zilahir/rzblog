@@ -18,6 +18,11 @@ const PostContainer = styled.div`
         font-size: 16px;
         color: #b3568b;
       }
+      aside {
+        background-color: #ffeeba;
+        padding: 10px;
+        margin-bottom: 30px;
+      }
     `;
 
 class BlogPostTemplate extends React.Component {

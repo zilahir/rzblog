@@ -307,7 +307,7 @@ Ezután, ha mindent jól csináltunk, és most megnitjuk a szájtot:
 
 ##Most pedig jöjjön az igazi móka. 
 
-Mi szokott lenni a legnagyobb gond, egy wp szájt fejlesztése közben akkor, ha azt folyamatosan deploylni kell kaz ügyfélnek, azok meg netán közben használják is, és mindenfélével megtelik közben az adatbázis? 
+Mi szokott lenni a legnagyobb gond, egy wp szájt fejlesztése közben akkor, ha azt folyamatosan deploylni kell az ügyfélnek, azok meg netán közben használják is, és mindenfélével megtelik közben az adatbázis? 
 
 Számora az, hogy ilyenkor lesz két (vagy három, ha van `dev`, `staging`, és `prod` környezet is) adatbázis is. 
 
@@ -327,9 +327,14 @@ Nagyvonalakban, a `git hook` lehetővé teszi, hogy különböző scripteket fut
 
 Pontosan ezt a tulajdonságát fogjuk kihasználni mi is. 
 
-Mire van szükségünk deployolás közben? 
+Mire van szükségünk deployolás közben?
 
 Ha localhoston fejlesztünk, minden bizonnyal gyakran túrkálunk az adatbázisban, új táblákat hozunk létre, módosítunk dolgokat, stb. Tehát ha deployoljuk a kódot, ami tartalmaz olyan adatbázison alapulú függvényeket, ami a remote adatbázison nincs kinnt, akkor jó eséllyel deploy után elhasal az alkalmazás, és jöhet a fájdalmas dump + import kombó. Ezt mindenképpen szeretnénk elkerülni, mert én már jóval többször csináltam életemben, mint szerettem volna. 
+
+
+<aside>
+A <a target="_blank" href="https://www.facebook.com/groups/wpcsoport/?ref=br_rs&fb_dtsg_ag=AQx8XajeFRP3XaV9pG6lgphwNbivKNfvroPTZr5krkTeNg%3AAQybXuMgFDV9-3cFKODdyq5BoQYvvxtW1Ou48MuC9ur9ZQ&jazoest=28219">Wordpress fejlesztők és felhasználók</a> csoportban felhívták a figyelmem arra, hogy ha <code>public</code> git repot használtok, akkor az adatbázis dumpolással, és <code>git</code>-ben tárolással érzékeny adatokat is közzé tehettek, tehát ha ezt a módszert alkalmazzátok, javasolt, hogy `private` repot használjaotk! Köszönöm szépen az észrevételt!
+</aside>
 
 Két dolog kell: 
 
@@ -358,7 +363,7 @@ Nyissunk meg egy editorban:
 
 ![vscode pre-commit](./images/empty_pre_commit.png)
 
-Csináljunk egy `!sqldump` fodlert, a `wordpress` folderben: 
+Csináljunk egy `!sqldump` foldert, a `wordpress` folderben: 
 
 `mkdir !sqldump`
 
