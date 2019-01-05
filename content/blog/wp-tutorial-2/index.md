@@ -333,7 +333,7 @@ Ha localhoston fejlesztünk, minden bizonnyal gyakran túrkálunk az adatbázisb
 
 
 <aside>
-A <a target="_blank" href="https://www.facebook.com/groups/wpcsoport/?ref=br_rs&fb_dtsg_ag=AQx8XajeFRP3XaV9pG6lgphwNbivKNfvroPTZr5krkTeNg%3AAQybXuMgFDV9-3cFKODdyq5BoQYvvxtW1Ou48MuC9ur9ZQ&jazoest=28219">Wordpress fejlesztők és felhasználók</a> csoportban felhívták a figyelmem arra, hogy ha <code>public</code> git repot használtok, akkor az adatbázis dumpolással, és <code>git</code>-ben tárolással érzékeny adatokat is közzé tehettek, tehát ha ezt a módszert alkalmazzátok, javasolt, hogy `private` repot használjaotk! Köszönöm szépen az észrevételt!
+A <a target="_blank" href="https://www.facebook.com/groups/wpcsoport/?ref=br_rs&fb_dtsg_ag=AQx8XajeFRP3XaV9pG6lgphwNbivKNfvroPTZr5krkTeNg%3AAQybXuMgFDV9-3cFKODdyq5BoQYvvxtW1Ou48MuC9ur9ZQ&jazoest=28219">Wordpress fejlesztők és felhasználók</a> csoportban felhívták a figyelmem arra, hogy ha <code>public</code> git repot használtok, akkor az adatbázis dumpolással, és <code>git</code>-ben tárolással érzékeny adatokat is közzé tehettek, tehát ha ezt a módszert alkalmazzátok, javasolt, hogy <code>private</code> repot használjatok! Köszönöm szépen az észrevételt!
 </aside>
 
 Két dolog kell: 
