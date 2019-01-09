@@ -4,7 +4,6 @@ date: 2018-11-10 22:53:02
 tags:
   - 'finnország, suomi'
 categories: [finnország, hun]
-thumbnail: ./../images/plates.jpg
 ---
 
 ##Hogyan írassunk át magyar autót Finnországban?

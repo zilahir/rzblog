@@ -8,7 +8,7 @@ categories: [coding]
 
 ![header](./images/header.png)
 
-##Hogyan fejlesszünk wordpress szájtot 2019-ben? 
+##Hogyan fejlesszünk wordpress szájtot 2019-ben?
 
 Sajnos nagyon sok internetes közösségben, legyen az egy tematikus wordpress csoport, stackoverflow, vagy hasonló, még mindig azt látni, hogy a wordpress fejlesztés még mindig le van ragadva valahol 2006 környékén.
 
@@ -30,13 +30,13 @@ vágjunk is bele.
 
 ##Docker 
 
-(Docker)[], és (Docker compose)[] installálva, és futnak. 
+Docker, és Docker compose installálva, és futnak. 
 
 Csináluk meg a folder struktúrát a projekthez. 
 
 
-`mkdir wp-demo `
-`cd wp-demo `
+`mkdir wp-demo`
+`cd wp-demo`
 `touch docker-compose.yml`
 `code docker-compose.yml`
 
@@ -61,10 +61,6 @@ A root folderben létrejöttek mindenféle könyvtárak:
 ![Project root folder](./images/root-folder.png)
 
 Állítsuk le a containereket, just in case. Ehhez vagy egy másik terminalban `docker-compose down` vagy simán `CMD+C`. 
-
-<aside>
-A <a target="_blank" href="https://www.facebook.com/groups/wpcsoport/?ref=br_rs&fb_dtsg_ag=AQx8XajeFRP3XaV9pG6lgphwNbivKNfvroPTZr5krkTeNg%3AAQybXuMgFDV9-3cFKODdyq5BoQYvvxtW1Ou48MuC9ur9ZQ&jazoest=28219">Wordpress fejlesztők és felhasználók</a> csoportban <code>Radics Ottó</code> felhívta a figyelmem, arra, hogy <code>docker-compose stop</code> helyett érdemes <code>docker-compose down</code>-t használni, mert így nem kell újra létrehoznia a <code>docker</code>-nek network-öt. Plusz infó, hogy <code>docker-compose up -d</code> esetén visszakapjuk a <code>shell</code>-t, így nem kell új konzolt nyitni, mint ahogy én is csináltam. Köszönöm az észrevételt, és a kiegészítést!
-</aside>
 
 Menjünk az `nginx` folderbe, és hozzuk létre az `nginx.conf` fájlt. 
 
