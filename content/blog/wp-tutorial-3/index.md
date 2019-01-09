@@ -1,6 +1,6 @@
 ---
 title: Hogyan fejlesszünk Wordpressre 2019-ben? 3. rész
-date: 2019-01-05 23:42:26
+date: 2019-01-09 23:42:26
 tags:
  - 'code, hu'
 categories: [coding]
