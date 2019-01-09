@@ -16,7 +16,7 @@ Sajnos nagyon sok internetes közösségben, legyen az egy tematikus wordpress c
 
 Gondolkoztam, hogy mennyire az alapoktól kezdjem, és úgy döntöttem, hogy aki idetéved, azok az alapokon már túlvannak, úgyhogy amolyen bele a közepébe jelleggel fogok haladni. 
 
-Fontos megemlítenem, hogy az itt leírtak az én személyes preferenciáim, ahogyan én szoktam, vagy legalábbis ahogyan az elmúlt 1-2 évben vágtam bele egy-egy egyedi wordpress mini webalkalmazás fejlesztésébe. Mostanában kerülöm a worpress bűvölést, az utóbbi időben eltávolodtam a PHP-től, JS alkalmazásokkal foglalkozom mostanában. 
+Fontos megemlítenem, hogy az itt leírtak az én személyes preferenciáim, ahogyan én szoktam, vagy legalábbis ahogyan az elmúlt 1-2 évben vágtam bele egy-egy egyedi wordpress mini webalkalmazás fejlesztésébe. Mostanában kerülöm a worpress bűvölést, az utóbbi időben eltávolodtam a PHP-től, JS alkalmazásfejlesztéssel foglalkozom. 
 
 A teljesség igénye nélkül, a sorozatban olyasmik fognak elhangzani, mint docker, npm, webpack, MVC, SCSS, különböző JS frameworkok mint pl. React, GatsbyJs, terveim között szerepel egy wordpress szájt építése csak a restAPI használatával.
 
