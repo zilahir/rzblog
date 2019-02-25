@@ -32,7 +32,7 @@ function Bio() {
                 I do tweet.
               </a>              
               <span style={{marginLeft: `10px`}}>
-              Do you have a project for me? Drop me an <a href="mailto:zilahi@gmail.com">email</a>.
+              Wanna contact me? Drop me an <a href="mailto:zilahi@gmail.com">email</a>.
               </span>
             </p>              
           </div>
