@@ -6,7 +6,7 @@ tags:
 categories: [coding]
 ---
 
-FME is stands for `Finnországi Magyarok Egyesülete`, (`Association of Hungarians in Finland` // `Suomen Unkarilaisten Yhdistys`, and I was just elected as a board member in the beginning of this year. 
+FME is stands for `Finnországi Magyarok Egyesülete`, (`Association of Hungarians in Finland` // `Suomen Unkarilaisten Yhdistys`), and I was just elected as a board member in the beginning of this year. 
 
 Since I am a fullstack developer, I immediately assigned myself to recreate the entire website of the association from scratch. 
 
