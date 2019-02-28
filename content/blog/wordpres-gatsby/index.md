@@ -99,9 +99,7 @@ export const users = [
 
 And then, only a `find()` method needed during the `render()` which then returns the `fullName` property of the object, where the `author` is `zilahir`. 
 
-Easy peasy. 
-
-(screenshot a strukturáról). 
+Easy peasy.
 
 And then, I have applied the same type of logic setting the parent elsewhere also, it turned out pretty handy, so I am using it for showing the “upcoming events” for the rest of the year, creating a section for the Management, etc. 
 
