@@ -8,7 +8,7 @@ import { rhythm, scale } from '../utils/typography'
 
 const PostContainer = styled.div`
       color: initial;
-      h2 {
+      h2, h3 {
         color: #ff69b4;
       }
       pre {
