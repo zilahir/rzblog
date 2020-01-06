@@ -250,4 +250,8 @@ Everybody makes mistakes. The real advantage and power here is, how fast you can
 Sentry helps you find the bugs in the code, creating reports about all of them, can create issues even! How cool is that! Plus, it provides all different type of information you need to be able to reproduce it. Where it happened, how it happened, saves the track trace. I strongly recommend to start using it today, becasue it's definitely a game changer. 
 If you are using `redux` as I am, you will find [`redux-devtools-extension`](https://www.npmjs.com/package/redux-devtools-extension). That helps you look over your store, with cool features like pausing and locking, and much more. Here's an [article](https://medium.com/@zalmoxis/improve-your-development-workflow-with-redux-devtools-extension-f0379227ff83) describing how does it work.
 
+![Redux Devtools](./images/devtools1.png)
+
+![Redux Devtools](./images/devtools2.png)
+
 There's also a `Visual Studio Code` extension called `Debugger for Chrome` that helps you debug React client side code. It allows you to set breakpoints in `Visual Studio Code`. [Here's](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react) the corresponding documentation describes the whole thing. You gonna like this, even though it requires a bit of a setup too. 
