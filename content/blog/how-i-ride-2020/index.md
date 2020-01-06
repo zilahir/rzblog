@@ -39,9 +39,9 @@ Let’s go on, and discuss how do I set up a fresh, new project.
 
 #  Project setup 
 
-I will be honest. I am using [`create-react-app`]. It pretty much covers everything I need, and save me a lot of time and trouble. If there’s something I want to change in the build process, or add some functions which is not in `create-react-app`, I am [`ejecting`] and modifying it the way I need. 
+I will be honest. I am using [`create-react-app`](https://github.com/facebook/create-react-app). It pretty much covers everything I need, and save me a lot of time and trouble. If there’s something I want to change in the build process, or add some functions which is not in `create-react-app`, I am [`ejecting`](https://create-react-app.dev/docs/available-scripts#npm-run-eject) and modifying it the way I need. 
 
-When using react on the frontend side, I am using so together with [`redux`] therefore I am going forward, and setting up the `redux` store, by installing `react-redux`, `redux-thunk`, creating the folder structure in the `src` folder. 
+When using react on the frontend side, I am using so together with [`redux`](https://github.com/reduxjs/redux) therefore I am going forward, and setting up the `redux` store, by installing `react-redux`, `redux-thunk`, creating the folder structure in the `src` folder. 
 
 ```
 src
@@ -55,7 +55,7 @@ src
         ├── Test.js
 ```
 
-Simple. Keeping the `reducers` in the reducers folder, actions (and action type) in the `action` folder. 
+Simple. Keeping the `reducers` in the `reducers` folder, `actions` (and action type) in the `action` folder. 
 
 The next steps are important. Need to configure eslint, and husky and prettier. All are essential, since these stuff helps me to produce clean code, and prevents me to push badly written snippets into the git reposiroty, that ultimately reduces the potential time spent on debugging, and stuff. 
 
@@ -97,9 +97,19 @@ Let's consider some benefits of using `hooks`
 
 If you haven't given a try it yet, I encourage you to do so. React is evolving, constantly, you need to stay on track, and pick up the pieces the React core team gives. It's just better, trust me. I have started to getting into the details of hooks, but then I decided not to. There are several great articles out there, that explains the pros and cos pretty well, so I am not gonna take away the feeling of _eureka_. 
 
+### Types
+
+You know what I want to say here. `Typescript`, `propTypes`, these things was not invented by lonely and bored people on some corner of a dark room. It was created by a big community of people, who recognized the need for this in the `javascript` world. 
+
+I have read opinions, claiming `Typescript` is not helping at all, it's just make the whole development process harder, and so on. Well for them the only thing I can say is that you probably wanted to use `Typescript` in a project where it wasn't supposed to. Becasue that can happen. In that case stick with javascript, and don't overkill it. But if you are working on a project, more complex, you will pretty soon find yourself in that kind of trouble that `Typescript` menat to help you with. 
+
+Nt going to lie, in the beginning it was annoying. But this changed quickly. The more type definitions I was putting into the code, the more often I was noticing that it was saving me from wasting time on manually debugging stupid bugs in the console. 
+
+If a project does not require `Typescript` becasue it's smaller, you still can use `propTypes` that helps you reduce debugging, will eanbell you implement new features in existng components, and fellow developers will understand your code better. Not to mention documentation, which I'll explain later, why crucial. (Hint: it _is_ crucial!)
+
 ### How to handle styling? 
 
-This was a long term struggle for me, until I found the perfect combination for the time being. My answer is: `scss modules` + `styled-components` together. 
+This was a long term struggle for me, until I found the perfect combination for the time being. My answer is: [`scss modules`](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) + [`styled-components`](https://github.com/styled-components/styled-components) together. 
 
 You heard me well. Now, this might sounds a crazy combination, but serves me well. Let me show what I mean. 
 
@@ -207,7 +217,7 @@ Ok, let's talk about some more serous stuff. The tech.
 
 I have already revealed, I have made my commitment to ReactJs, like 2 or 3 years ago. I have tried - though, slightly indeed - Vue, and Angular, but both seemed a bit weird to be honest. It was surely back in the days, maybe one of the very firsts versions of Angular, though I know they also have developed a lot during these past years, I am sticking with React. And that's a fact. 😉
 
-Also mentioned, when I am starting a new project, recently I have started to use `hooks`. It's just mond blowing how much faster the development became, just by writing purely function components, and not classes. The Context api does it's job, though, I am making it ieven more powerful with `redux`. Safe to say, when one does say, `redux` becaame useless, once the `Context API` was introduced, i am disagreeing. I don't find that true. `Redux` still playes an important role. 
+Also mentioned, when I am starting a new project, recently I have started to use `hooks`. It's just mond blowing how much faster the development became, just by writing purely function components, and not classes. The Context api does it's job, though, I am making it ieven more powerful with `redux`. Safe to say, when one does say, `redux` becaame useless, once the [`Context API`](https://reactjs.org/docs/hooks-reference.html#usecontext) was introduced, i am disagreeing. I don't find that true. `Redux` still playes an important role. 
 
 ## Backend 
 
@@ -239,6 +249,8 @@ As for the frontend, I have already mentioned this above briefly. Lock the `mast
 
 If you decide you are going to deploy from docker, that's a bit of a longer run, but definitely worth it. I will leave here [this](https://www.youtube.com/watch?v=Sf3-16eJNII) video, where a fellow developers show how he does it. 
 
+Also, `GitHub` has now a feature called [`actions`](https://github.com/features/actions), which can build, test, and deploy your applications. I love how far we have gotten even from `Jenkins` jobs, to actual `CI/CD`. 
+
 # Documentation 
 
 I know. Everybody does hate it, but it's really crucial. The earlier you realize that, the less pain you will cause to yourself, or to your team. Write documentation, explain what you did, and how to use it. Recently I had a small personal project, I wrote a`GatsbyJs` starter. It has a pretty simple [documentation](https://github.com/zilahir/react-landing-page/blob/master/README.md), but it still does it job.
@@ -255,3 +267,12 @@ If you are using `redux` as I am, you will find [`redux-devtools-extension`](htt
 ![Redux Devtools](./images/devtools2.png)
 
 There's also a `Visual Studio Code` extension called `Debugger for Chrome` that helps you debug React client side code. It allows you to set breakpoints in `Visual Studio Code`. [Here's](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react) the corresponding documentation describes the whole thing. You gonna like this, even though it requires a bit of a setup too. 
+
+#Conclusions
+
+You might have noticed that I missed testing, like completely.
+That is not a coincidence. I am planniing to write an entire post about testing, the idea, the approaches, the tools, and the automation. I simply did not want to squeeze it into this. Let's give it the respect it deserves. 😝
+
+These are my preferenices, and my thoughts only. I know a lot of guys out there, who are doiing things differently, and might disagree with me even, and that's okay. Everybody needs to find their own way of developing, what makes them happy and efficient. 
+
+Do you have anything to say? Reach out to me on [twitter](https://twitter.com/zilahy)!
