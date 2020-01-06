@@ -65,7 +65,7 @@ class Layout extends React.Component {
         {header}
         {children}
         <footer>
-          2018, <a href="https://richardzilahi.hu">richardzilahi</a>.
+          2020, <a href="https://richardzilahi.hu">richardzilahi</a>.
           <Social />
         </footer>
       </div>
