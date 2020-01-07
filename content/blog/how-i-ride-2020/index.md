@@ -9,7 +9,7 @@ thumbnail: ./../images/slack.jpg
 
 This is a quick review about how I have been working on the projects I’ve been involved in. Either professional projects at my full time job, or my personal project I did just for myself.  This will discuss technologies I choose, solutions, settings, and more. Bare with me.
 
-Here’s a short table of contents I wish to cover in this article. 
+Here’s a short list of contents I wish to cover in this article. 
 
 1) IDE
 2) IDE Settings & Extensions
@@ -24,11 +24,10 @@ Here’s a short table of contents I wish to cover in this article.
 11) Deployment
 12) Documentation
 13) Debugging
-14) Issue tracking
 
 #IDE & IDE Settings
 
-As most of the fullstack and web developers in the past few years, I am also using [`visual studio code`]. To make the most out of it, I am using `ligatures`, namely [`fira code`], and using [`night-owl`] for theme, to make it all nice looking, good for the eye, and easy to read. 
+As most of the fullstack and web developers in the past few years, I am also using `visual studio code`. To make the most out of it, I am using `ligatures`, namely [`fira code`], and using [`night-owl`] for theme, to make it all nice looking, good for the eye, and easy to read. 
 
 I am using a few extensions, just to mentions the most important ones: 
 
@@ -99,13 +98,13 @@ If you haven't given a try it yet, I encourage you to do so. React is evolving, 
 
 ### Types
 
-You know what I want to say here. `Typescript`, `propTypes`, these things was not invented by lonely and bored people on some corner of a dark room. It was created by a big community of people, who recognized the need for this in the `javascript` world. 
+You know what I want to say here. `Typescript`, `propTypes`, these things was not invented by lonely and bored people in some corner of a dark room. It was created by a big community of people, who recognized the need for this in the `javascript` world. 
 
 I have read opinions, claiming `Typescript` is not helping at all, it's just make the whole development process harder, and so on. Well for them the only thing I can say is that you probably wanted to use `Typescript` in a project where it wasn't supposed to. Becasue that can happen. In that case stick with javascript, and don't overkill it. But if you are working on a project, more complex, you will pretty soon find yourself in that kind of trouble that `Typescript` menat to help you with. 
 
-Nt going to lie, in the beginning it was annoying. But this changed quickly. The more type definitions I was putting into the code, the more often I was noticing that it was saving me from wasting time on manually debugging stupid bugs in the console. 
+Not going to lie, in the beginning it was annoying. But this changed quickly. The more type definitions I was putting into the code, the more often I was noticing that it was saving me from wasting time on manually debugging stupid bugs in the console. 
 
-If a project does not require `Typescript` becasue it's smaller, you still can use `propTypes` that helps you reduce debugging, will eanbell you implement new features in existng components, and fellow developers will understand your code better. Not to mention documentation, which I'll explain later, why crucial. (Hint: it _is_ crucial!)
+If a project does not require `Typescript` becasue it's smaller, you still can use `propTypes` that helps you reduce debugging, will enable you implement new features in existng components, and fellow developers will understand your code better. Not to mention documentation, which I'll explain later, why crucial. (Hint: it _is_ crucial!)
 
 ### How to handle styling? 
 
@@ -225,13 +224,13 @@ This is where the story could get more interesting. Sneak peek: it won't though.
 
 Sometimes using PHP, sometimes, and this is more frequent, using nodeJs. There is not really any preference, how I make the call at the very end, even though sometimes I like to think there is, couldn't really say so. 
 
-If there is a legacy version of anything, like there is a `mysql` database in production, that can't be changed or whatever the reason might be, I am going with PHP, becasue it's just easier for me to handle `mysql` databases with PHP. One it comes to this, the solution for me is either Laravel, if I need to buuild something robust, `Lumen` framework otherwise. You gotta love that, it's micro-framework for writing API, and writing it FAST. 
+If there is a legacy version of anything, like there is a `mysql` database in production, that can't be changed or whatever the reason might be, I am going with PHP, becasue it's just easier for me to handle `mysql` databases with PHP. One it comes to this, the solution for me is either Laravel, if I need to uuild something robust, `Lumen` framework otherwise. You gotta love that, it's `micro-framework` for writing API, and writing it FAST. 
 
 One working on the project from scratch, I am going with `nodeJs`. With `nodeJs` I do have my own preference of course, which won't be suprising: `expressJs`. Even though recently I started to notice people are leaving `express` more and more, and started using the alternatives, such us `Fastify` or `Koa`, which gains popularity day by day. There is even an article I came across with, with the title [Forget ExpressJS](https://blog.logrocket.com/forget-express-js-opt-for-these-alternatives-instead/). You go ahead and read it!
 
 ## JWT 
 
-You know what [`JWT`](https://en.wikipedia.org/wiki/JSON_Web_Token) is. When a server receives a JWT, it can guarantee the data it contains can be trusted because it’s signed by the source. No middleman can modify a JWT once it’s sent. Though some people you come across might claim that you should only use JWT for API authentocation mechanism. It's true in my believing as well. That's what it's for. I am not going to get deeper into JWT in this article, let's save that for later. THe important thing, it's super easy to use JWT with `expressJs`, in a middleware, using [`jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#readme) package. Easy-peasy. 
+You know what [`JWT`](https://en.wikipedia.org/wiki/JSON_Web_Token) is. When a server receives a JWT, it can guarantee the data it contains can be trusted because it’s signed by the source. No middleman can modify a JWT once it’s sent. Though some people you come across might claim that you should only use JWT for API authentocation mechanism. It's true in my believing as well. That's what it's for. I am not going to get deeper into JWT in this article, let's save that for later. The important thing, it's super easy to use JWT with `expressJs`, in a middleware, using [`jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#readme) package. Easy-peasy. 
 
 Of course, I need to mention, JWT is easy with Lumen also. Just use the [`tymon/jwt-auth:dev-develop`] package. I mean that's what I am using. 
 
@@ -241,13 +240,13 @@ Gonna be short here. If it's a PHP API, I am going with the old-good `mysql`. If
 
 # Deployment 
 
-Hah! One of the pest parts. Deploying are good, since that makes our application alive. That's why I always taken good care of the deployment, and it's processes. Building, tagging, releasing, every level. I am still suprised people are building there app, and uploading it to some VPS. I mean, boy, have some respect and sanity, and do it the way it supposed to. Write a deployment pipeline, tag the version, release it. 
+Hah! One of the pest parts. Deploying are good, since that makes our application alive. That's why I always taken good care of the deployment, and it's processes. Building, tagging, releasing, every level. I am still suprised people are building their apps, and uploading it to some VPS. I mean, boy, have some respect and sanity, and do it the way it supposed to. Write a deployment pipeline, tag the version, and then release it. 
 
 I am using both AWS, and Netlify to deploy my stuff. The static frontend most of the times, are going to netlify, while the backend going to AWS. Lambda function, AWS Amplify, etc. Even better if you create a nce docker image, and using that for the backend deployment. 
 
 As for the frontend, I have already mentioned this above briefly. Lock the `master` branch, set up the deployment within `netlify` which will be triggered from `Github` for example, once a `PR` is merged into the `master`. Automatically. Like magic, right? Forget about VPS, please. Let this be your new year resolution! 
 
-If you decide you are going to deploy from docker, that's a bit of a longer run, but definitely worth it. I will leave here [this](https://www.youtube.com/watch?v=Sf3-16eJNII) video, where a fellow developers show how he does it. 
+If you decide you are going to deploy from docker, that's a bit of a longer run, but definitely worth it. I will leave here [this](https://www.youtube.com/watch?v=Sf3-16eJNII) video, where a fellow developer show how he does it. 
 
 Also, `GitHub` has now a feature called [`actions`](https://github.com/features/actions), which can build, test, and deploy your applications. I love how far we have gotten even from `Jenkins` jobs, to actual `CI/CD`. 
 
