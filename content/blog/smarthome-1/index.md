@@ -15,7 +15,7 @@ I have purchased a [google home nest]() months ago, but beside it's being a nice
 
 ## Lights
 
-Just like many others, I started my so called _smart home_ with the easiest way possible. [Philips Hue]() smart ligths. These are pretty common for everyone, you walk into a hardware store, buy the sarter kit, which includes the _Hub_ a few lights (3), and a dimmer switch. What is really amazing in these, even after watching videos, and stuff, that it's indeed super easy to install. Just plug in the Hub, open the `Google Home` application, scan the Hub's QR code on the back, screw in the ligthbulbs, and you are basically all set. All the nice things, the scenes, and routines are part of either the Philips Hue's official app, or the Google Home app, which I am personally prefer.
+Just like many others, I started my so called _smart home_ with the easiest way possible. [Philips Hue]() smart lights. These are pretty common for everyone, you walk into a hardware store, buy the sarter kit, which includes the _Hub_ a few lights (3), and a dimmer switch. What is really amazing in these, even after watching videos, and stuff, that it's indeed super easy to install. Just plug in the Hub, open the `Google Home` application, scan the Hub's QR code on the back, screw in the ligthbulbs, and you are basically all set. All the nice things, the scenes, and routines are part of either the Philips Hue's official app, or the Google Home app, which I am personally prefer.
 
 Right after installing, and naming the lights, placing them into _rooms_ within the app, I was ready to control them with the _Google Assitant_ by voice. This is pretty neat, just shout out commands to Google, such as: 
 
