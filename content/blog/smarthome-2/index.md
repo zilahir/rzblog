@@ -4,6 +4,7 @@ date: 2020-12-04 01:03:11
 tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
+isPublic: false
 #thumbnail: ./../images/smarthome_1.jpg
 ---
 
@@ -267,6 +268,8 @@ _IFTTT_ stands for: _If This Then That_, and it's as easy as it sounds. You can 
 This is the simple worklow I created in a service using `IFTTT`:
 
 ![IFTTT Flow](./images/adding_item_flow.png)
+
+
 
 ## So where are we now?
 

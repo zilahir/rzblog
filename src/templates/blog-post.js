@@ -5,6 +5,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import { UnPublished } from '../components/UnPublished'
 
 const PostContainer = styled.div`
       color: initial;
@@ -46,6 +47,11 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <PostContainer>
+          {
+            post.frontmatter.isPublic === false && (
+              <UnPublished />
+            )
+          }
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </PostContainer>
         <hr
@@ -79,6 +85,11 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        {
+          post.frontmatter.isPublic === false && (
+            <UnPublished />
+          )
+        }
       </Layout>
     )
   }
@@ -101,6 +112,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        isPublic
       }
     }
   }
