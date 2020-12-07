@@ -41,9 +41,9 @@ So, let's see the basics, from the very beginning, what I want to achieve here:
 
 ## Researching
 
-This sounds pretty simple, so first I needed to figure out how `K-Ruoka` handles it's product. This is a pretty basic method of `reverse engineering`, I just opened their website, and started browsing items, and added them to the busket.
+This sounds pretty simple, so first I needed to figure out how `K-Ruoka` handles it's product. This is a pretty basic method of `reverse engineering`, I just opened their website, and started browsing items, and added them to the basket.
 
-Simply collecting items, and adding them to the busket, by pressing the `+` sign.
+Simply collecting items, and adding them to the basket, by pressing the `+` sign.
 
 ![K-Ruoka 1](./images/kruoka_1.png)
 
@@ -71,13 +71,13 @@ This definitely handles our basket.
 
 `138e6952-25b3-4242-9851-8f229535f47b`
 
-This must be our busket id, which looks like a `uuid`.
+This must be our basket id, which looks like a `uuid`.
 
-`update`, means we are updating our busket. 
+`update`, means we are updating our basket. 
 
 `storeId=N106` our chosen store, for example `Espoo, Iso Omena`
 
-Well, this looks pretty easy, let's save it for later, but it seems I am able to pragmatically add products to my busket.
+Well, this looks pretty easy, let's save it for later, but it seems I am able to pragmatically add products to my basket.
 
 Let's observe now the payload of this request: 
 
@@ -285,9 +285,9 @@ We have an `id` that identifies the shopping list itself, and the array with the
 
 ![Poducts in MongoDB](./images/products_mongodb.png)
 
-## Let's get back to the busketID
+## Let's get back to the basketID
 
-I have mentioend it ealier, that if I add some product on `K-Ruoka`'s frontend, there's a `PUT` request sent to the backend, with the item, and with a `uuid` of a `busket`.
+I have mentioend it ealier, that if I add some product on `K-Ruoka`'s frontend, there's a `PUT` request sent to the backend, with the item, and with a `uuid` of a `basket`.
 
 Once again, the `buskedId` looked like the following:
 
@@ -295,7 +295,7 @@ Once again, the `buskedId` looked like the following:
 
 By first blink, this looks like an `uuid`.
 
-At this point I needed to figure out how can I add to a busket without using their frontend. So, by simply generating my own `uuid`, using for exampe the [`uuid`](https://www.npmjs.com/package/uuid) npm package.
+At this point I needed to figure out how can I add to a basket without using their frontend. So, by simply generating my own `uuid`, using for exampe the [`uuid`](https://www.npmjs.com/package/uuid) npm package.
 
 After generaint an `uuid` I was calling their `draft` `API` with a copied payload from the request: 
 
@@ -325,9 +325,9 @@ And the response was the following:
 }
 ```
 
-![K-Ruoka Add To Busket with Custom BusketId](./images/kruoka_draaft_busket_id.png)
+![K-Ruoka Add To basket with Custom basketId](./images/kruoka_draaft_basket_id.png)
 
-Well, that's a problem. Seems like, they are creating, and then validating these `buskedId`s, on their own way. I needed to figure out where, and how this specific pieice of string is created, that represents a busket.
+Well, that's a problem. Seems like, they are creating, and then validating these `buskedId`s, on their own way. I needed to figure out where, and how this specific pieice of string is created, that represents a basket.
 
 By opening an inconito window, with the console, then opening `k-ruoka.fi`, I was not able to catch any request, that creates and returns this.
 
@@ -342,8 +342,8 @@ It returns an `HTML`, but it seems like they are storgint the entire applicatino
 So I just needed a `node-html-parser` call this `endpoint`, get the `data-state` attribute, parse it into `JSON` and get the `draftId` property. Simple as that: 
 
 ```
-exports.createBusket = () => new Promise((resolve, reject) => {
-  fetch(`${kRuokaApi.createBusket}`, {
+exports.createbasket = () => new Promise((resolve, reject) => {
+  fetch(`${kRuokaApi.createbasket}`, {
     method: 'GET',
     headers: {'Content-Type': 'text/html'},
   }).then(html => html.text()).then(htmlResponse => {
@@ -351,7 +351,7 @@ exports.createBusket = () => new Promise((resolve, reject) => {
     const applicationState = html.querySelector('#applicationState').getAttribute('data-state')
     resolve({
       isSuccess: true,
-      busketId: JSON.parse(applicationState).page.state.orderDraft.draft.draftId,
+      basketId: JSON.parse(applicationState).page.state.orderDraft.draft.draftId,
     })
   })
 })
@@ -362,24 +362,24 @@ I wrapped it into an endpoint in my own `nodeJS` server, and now, by calling tha
 ```
 {
     "isSuccess": true,
-    "busketId": "78cd610f-2867-468c-a592-806c5c68a86b"
+    "basketId": "78cd610f-2867-468c-a592-806c5c68a86b"
 }
 ```
 
-I have a `buskedId`. I changed the terminology from `draft` to `busket` that's more straightforward for me. 
+I have a `buskedId`. I changed the terminology from `draft` to `basket` that's more straightforward for me. 
 
-And now, by using this `busketId`, i am able to add items pragmatically using the itesm stored in my own `shoppingList` collection: 
+And now, by using this `basketId`, i am able to add items pragmatically using the itesm stored in my own `shoppingList` collection: 
 
-![K-Ruoka Insert To Busket](./images/kruoka_insert_to_busket.png)
+![K-Ruoka Insert To basket](./images/kruoka_insert_to_basket.png)
 
 And while this is great, there's some things to keep in mind. 
 
-For example we don't know how long these `busketId`s are valid, also we don't know what type of validation they run against the items being inserted to the busket. So instead of keep adding items to the busket, let's create it and add all the items being placed in my own `shoppingList` when I am ready to place the order.
+For example we don't know how long these `basketId`s are valid, also we don't know what type of validation they run against the items being inserted to the basket. So instead of keep adding items to the basket, let's create it and add all the items being placed in my own `shoppingList` when I am ready to place the order.
 
 And thats should be fairly easy, since we have now everything: 
 
 1) the `Products` in the shopping list, which has their `K-Ruoka` `productId` as reference,
-2) I can create new busket,
+2) I can create new basket,
 3) and I have an `API` that returns everything about a product.
 
 This last, 3rd point needs some explanation.
@@ -394,14 +394,14 @@ And this returns every piece of data, that represents a `Product`:
 
 ![K-Ruoka Product Response](./images/kruoka_product_response.png)
 
-It's safe to assume I will need all these, when placing the order, since it's also part of the object the frontends sends to the backend, when adding an item to the busket.
+It's safe to assume I will need all these, when placing the order, since it's also part of the object the frontends sends to the backend, when adding an item to the basket.
 
 I don't want to store this in my own database, for 2 reasons: 
 
 1) useless for my purposes
-2) what if some of the properties has changed between the time I have added to my busket, and the time my order is being placed.
+2) what if some of the properties has changed between the time I have added to my basket, and the time my order is being placed.
 
-To avoid that, I will create the busket, and add all the items the moment I tell my google assistant, to place the order.
+To avoid that, I will create the basket, and add all the items the moment I tell my google assistant, to place the order.
 
 So in my `MongoDB` there is an `Array` of `items`, where the some of the details are present. 
 
