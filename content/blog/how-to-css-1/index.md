@@ -5,13 +5,14 @@ tags:
  - 'code, en'
 categories: [coding]
 isPublic: true
+languages: ['en']
 ---
 
 ## How to write efficient CSS?
 
 As a fullstack developer, I do often write `CSS`, and sadly more often see badly thought designed and implemented `CSS` codes.
 
-The lack of using any [`preprocessors`]() is one thing, but the general problem is way multifarious. The reason I decided to come up with this article is to help developers create more organized, scalable and better `CSS`
+The lack of using any [`preprocessors`](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor) is one thing, but the general problem is way multifarious. The reason I decided to come up with this article is to help developers create more organized, scalable and better `CSS`
 
 ### Use SASS
 

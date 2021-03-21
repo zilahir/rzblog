@@ -5,6 +5,7 @@ tags:
  - 'code, hu'
 categories: [coding]
 isPublic: true
+languages: ['hu']
 ---
 
 Az [előző](https://blog.richardzilahi.hu/wp-tutorial-1/) részben összeraktunk egy wordpress fejlesztői környezetet, docker containerrel, webpack-el, MVC patternnel.

@@ -5,11 +5,12 @@ tags:
  - 'code, hu'
 categories: [coding]
 isPublic: true
+languages: ['hu']
 ---
 
 ![header](./images/header.png)
 
-##Hogyan fejlesszünk wordpress szájtot 2019-ben?
+## Hogyan fejlesszünk wordpress szájtot 2019-ben?
 
 Sajnos nagyon sok internetes közösségben, legyen az egy tematikus wordpress csoport, stackoverflow, vagy hasonló, még mindig azt látni, hogy a wordpress fejlesztés még mindig le van ragadva valahol 2006 környékén.
 

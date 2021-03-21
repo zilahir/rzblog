@@ -5,11 +5,12 @@ tags:
  - 'code, en'
 categories: [coding]
 isPublic: true
+languages: ['en']
 ---
 
 FME is stands for `Finnországi Magyarok Egyesülete`, (`Association of Hungarians in Finland` // `Suomen Unkarilaisten Yhdistys`), and I was just elected as a board member in the beginning of this year.
 
-Since I am a fullstack developer, I immediately assigned myself to recreate the entire website of the association from scratch. 
+Since I am a fullstack developer, I immediately assigned myself to recreate the entire website of the association from scratch.
 
 There were no actual deadline set, so I had plenty of time both designing, and making the decision about the stack related questions, and also the implementation itself. Which came quite handy, since I am the only developer among us, so I was not able to outsource any task, it was all me.
 

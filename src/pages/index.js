@@ -6,11 +6,23 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
+const languages = [
+  { label: 'hu', value: '🇭🇺' },
+  { label: 'en', value: '🇬🇧' },
+  { label: 'fin', value: '🇫🇮' }
+]
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
+
+    const renderLanguages = langs => langs.map(currentLanguage => (
+      <span>
+        {languages.find(lang => lang.label === currentLanguage).value}
+      </span>
+    ))
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -34,7 +46,9 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small style={{ color: '#ff69b4', fontSize: 16, }}>{node.frontmatter.date} {node.fields.readingTime.text}</small>
+                <small style={{ color: '#ff69b4', fontSize: 16, }}>
+                  {node.frontmatter.date} | {node.fields.readingTime.text} | {renderLanguages(node.frontmatter.languages)}
+                </small>
                 <p style={{ color: "#fff"  }} dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </div>
             )
@@ -68,6 +82,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             isPublic
+            languages
           }
         }
       }

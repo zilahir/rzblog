@@ -6,6 +6,7 @@ tags:
 categories: [coding, smarthome]
 thumbnail: ./../images/smarthome_1.jpg
 isPublic: true
+languages: ['en']
 ---
 
 Now, that I am official a house owner, I was able to start a new – and a long desired hobby: buildint a _smart home_.

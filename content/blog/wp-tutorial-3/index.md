@@ -5,6 +5,7 @@ tags:
  - 'code, hu'
 categories: [coding]
 isPublic: true
+languages: ['hu']
 ---
 
 ## Minimal unit tesztelés wordpress alatt

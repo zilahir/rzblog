@@ -5,6 +5,7 @@ tags:
   - 'finnország, suomi'
 categories: [finnország, hun]
 isPublic: true
+languages: ['hu']
 ---
 
 ## Hogyan írassunk át magyar autót Finnországban?

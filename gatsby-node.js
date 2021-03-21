@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     title
                     isPublic
+                    languages
                   }
                 }
               }
