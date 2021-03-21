@@ -9,15 +9,15 @@ isPublic: true
 languages: ['en']
 ---
 
-Now, that I am official a house owner, I was able to start a new – and a long desired hobby: buildint a _smart home_.
+Now, that I am official a house owner, I was able to start a new – and a long desired hobby: building a _smart home_.
 
 ## The basics
 
-I have purchased a [google home nest]() months ago, but beside it's being a nice toy that can tell me the current weather, and such, wasn't really that useful. Still, back then had all these ideas I knew I will make happen, once there will be a home for it. Well, know there is, and I decided, despite my quite chaotic blogging methods, that I will try to regularly write down my struggels, discoveries, and achievments, if there's any.
+I have purchased a [google home nest](https://www.gigantti.fi/cms/google-home/google-home-home-mini-ja-max-seka-nest-hub/) months ago, but beside it's being a nice toy that can tell me the current weather, and such, wasn't really that useful. Still, back then had all these ideas I knew I will make happen, once there will be a home for it. Well, know there is, and I decided, despite my quite chaotic blogging methods, that I will try to regularly write down my struggels, discoveries, and achievments, if there's any.
 
 ## Lights
 
-Just like many others, I started my so called _smart home_ with the easiest way possible. [Philips Hue]() smart lights. These are pretty common for everyone, you walk into a hardware store, buy the sarter kit, which includes the _Hub_ a few lights (3), and a dimmer switch. What is really amazing in these, even after watching videos, and stuff, that it's indeed super easy to install. Just plug in the Hub, open the `Google Home` application, scan the Hub's QR code on the back, screw in the ligthbulbs, and you are basically all set. All the nice things, the scenes, and routines are part of either the Philips Hue's official app, or the Google Home app, which I am personally prefer.
+Just like many others, I started my so called _smart home_ with the easiest way possible. [Philips Hue](https://www.gigantti.fi/brand/Philips%20HUE?as_templateId=30&scid=SEM8875353162&utm_source=google_search&utm_medium=SEM&utm_campaign=adwords-api-man-generic-&utm_content=all&gclid=Cj0KCQjw3duCBhCAARIsAJeFyPXUOClDersWTnPnhPSm8zLq3RhOqKWinJGMFolc-zhbK9jtbsqCDYkaAk5QEALw_wcB) smart lights. These are pretty common for everyone, you walk into a hardware store, buy the sarter kit, which includes the _Hub_ a few lights (3), and a dimmer switch. What is really amazing in these, even after watching videos, and stuff, that it's indeed super easy to install. Just plug in the Hub, open the `Google Home` application, scan the Hub's QR code on the back, screw in the ligthbulbs, and you are basically all set. All the nice things, the scenes, and routines are part of either the Philips Hue's official app, or the Google Home app, which I am personally prefer.
 
 Right after installing, and naming the lights, placing them into _rooms_ within the app, I was ready to control them with the _Google Assitant_ by voice. This is pretty neat, just shout out commands to Google, such as: 
 
