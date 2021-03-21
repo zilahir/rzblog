@@ -1,6 +1,6 @@
 ---
 title: SmartHome – Getting started
-date: 2021-11-15 01:03:11
+date: 2021-01-15 01:03:11
 tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
