@@ -5,6 +5,7 @@ tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
 isPublic: true
+languages: ['en']
 #thumbnail: ./../images/smarthome_1.jpg
 ---
 

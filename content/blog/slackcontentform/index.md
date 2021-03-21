@@ -6,6 +6,7 @@ tags:
 categories: [coding]
 thumbnail: ./../images/slack.jpg
 isPublic: true
+languages: ['en']
 ---
 
 Having a contact form on a landing page is like the basic accessories every webpage is having.

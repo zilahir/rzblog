@@ -6,11 +6,12 @@ tags:
 categories: [coding]
 thumbnail: ./../images/slack.jpg
 isPublic: true
+languages: ['en']
 ---
 
 This is a quick review about how I have been working on the projects I’ve been involved in. Either professional projects at my full time job, or my personal project I did just for myself.  This will discuss technologies I choose, solutions, settings, and more. Bare with me.
 
-Here’s a short list of contents I wish to cover in this article. 
+Here’s a short list of contents I wish to cover in this article.
 
 1) IDE
 2) IDE Settings & Extensions

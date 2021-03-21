@@ -5,6 +5,7 @@ tags:
 categories: [finnország, hun]
 date: 2018-05-20 09:59:00
 isPublic: true
+languages: ['hu']
 ---
 
 ## 2. javított kiadás

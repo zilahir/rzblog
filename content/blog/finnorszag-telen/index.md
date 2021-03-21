@@ -4,12 +4,13 @@ date: 2019-01-10 18:42:26
 tags:
   - 'finnország, suomi'
 categories: [finnország, hun]
-isPublic: true
+: true
+languages: ['hu']
 ---
 
 ## Mit csináljuk egy finn tél alatt?
 
-Finnországgal kacsolatban jó sok sztereotípia él az emberekben, amik közül talán nem az összes, de sok valóban igaz is. 
+Finnországgal kacsolatban jó sok sztereotípia él az emberekben, amik közül talán nem az összes, de sok valóban igaz is.
 
 Az egyik ilyen, hogy Finnországban hideg van. Nagyon. Ráadásul 4-5 hónapig tart a tél, ami ugye jóval több, mint 1-2 hét, így komoly felkészülést igényel, a lehető legtöbb szempontból. Nem csak fizikailag kell felkészülni a finn télre, meleg ruhákkal, szöges télugimuval az autóra, hanem kifogyhatatlan mennyiségű hobbival, ötlettel, és tervekkel, hiszen október közepén elmegy a nap, és május közepéig kettőnél több alkalommal nem is fogunk találkozni vele, ami nagyon sok ember számára igazán megterhelő tud lenni, ha nem foglalja el magát hasznos, és értékes tennivalókkal.
 
