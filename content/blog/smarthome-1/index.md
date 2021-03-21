@@ -1,10 +1,11 @@
 ---
 title: SmartHome – Getting started
-date: 2020-11-15 01:03:11
+date: 2021-11-15 01:03:11
 tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
 thumbnail: ./../images/smarthome_1.jpg
+isPublic: true
 ---
 
 Now, that I am official a house owner, I was able to start a new – and a long desired hobby: buildint a _smart home_.

@@ -4,11 +4,12 @@ date: 2019-01-03 23:42:26
 tags:
  - 'code, hu'
 categories: [coding]
+isPublic: true
 ---
 
-Az [előző](https://blog.richardzilahi.hu/wp-tutorial-1/) részben összeraktunk egy wordpress fejlesztői környezetet, docker containerrel, webpack-el, MVC patternnel. 
+Az [előző](https://blog.richardzilahi.hu/wp-tutorial-1/) részben összeraktunk egy wordpress fejlesztői környezetet, docker containerrel, webpack-el, MVC patternnel.
 
-Ebben a posztban pedig összerakunk egy staging körenyezetet, amin az ügyfélnek tudjuk prezentálni a mile stoneokat. 
+Ebben a posztban pedig összerakunk egy staging körenyezetet, amin az ügyfélnek tudjuk prezentálni a mile stoneokat.
 
 _First things first_, ideje hogy a projektnek létrehozzunk egy git repo-t. Én [bitbucket](http://bitbucket.org) bitbucketet fogok használni, mert rettentő elégedett vagyok a pipelinejaikkal, ami fontos, a deploy és egyéb adatbázissal kapcsolatos folyamatok automatizálásához. 
 

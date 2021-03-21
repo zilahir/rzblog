@@ -4,6 +4,7 @@ date: 2018-12-31 12:41:26
 tags:
  - 'code, hu'
 categories: [coding]
+isPublic: true
 ---
 
 ![header](./images/header.png)
@@ -12,9 +13,9 @@ categories: [coding]
 
 Sajnos nagyon sok internetes közösségben, legyen az egy tematikus wordpress csoport, stackoverflow, vagy hasonló, még mindig azt látni, hogy a wordpress fejlesztés még mindig le van ragadva valahol 2006 környékén.
 
-2006 régen volt, úgyhogy úgy gondoltam, hogy ideje lenne, a magyar wordpress fejlesztői társadalmat egy kicsit terelgetni a modern fejlesztői eszközök irányába. 
+2006 régen volt, úgyhogy úgy gondoltam, hogy ideje lenne, a magyar wordpress fejlesztői társadalmat egy kicsit terelgetni a modern fejlesztői eszközök irányába.
 
-Gondolkoztam, hogy mennyire az alapoktól kezdjem, és úgy döntöttem, hogy aki idetéved, azok az alapokon már túlvannak, úgyhogy amolyen bele a közepébe jelleggel fogok haladni. 
+Gondolkoztam, hogy mennyire az alapoktól kezdjem, és úgy döntöttem, hogy aki idetéved, azok az alapokon már túlvannak, úgyhogy amolyen bele a közepébe jelleggel fogok haladni.
 
 Fontos megemlítenem, hogy az itt leírtak az én személyes preferenciáim, ahogyan én szoktam, vagy legalábbis ahogyan az elmúlt 1-2 évben vágtam bele egy-egy egyedi wordpress mini webalkalmazás fejlesztésébe. Mostanában kerülöm a worpress bűvölést, az utóbbi időben eltávolodtam a PHP-től, JS alkalmazásfejlesztéssel foglalkozom. 
 

@@ -4,17 +4,18 @@ date: 2019-01-10 18:42:26
 tags:
   - 'finnország, suomi'
 categories: [finnország, hun]
+isPublic: true
 ---
 
-#Mit csináljuk egy finn tél alatt? 
+## Mit csináljuk egy finn tél alatt?
 
 Finnországgal kacsolatban jó sok sztereotípia él az emberekben, amik közül talán nem az összes, de sok valóban igaz is. 
 
-Az egyik ilyen, hogy Finnországban hideg van. Nagyon. Ráadásul 4-5 hónapig tart a tél, ami ugye jóval több, mint 1-2 hét, így komoly felkészülést igényel, a lehető legtöbb szempontból. Nem csak fizikailag kell felkészülni a finn télre, meleg ruhákkal, szöges télugimuval az autóra, hanem kifogyhatatlan mennyiségű hobbival, ötlettel, és tervekkel, hiszen október közepén elmegy a nap, és május közepéig kettőnél több alkalommal nem is fogunk találkozni vele, ami nagyon sok ember számára igazán megterhelő tud lenni, ha nem foglalja el magát hasznos, és értékes tennivalókkal. 
+Az egyik ilyen, hogy Finnországban hideg van. Nagyon. Ráadásul 4-5 hónapig tart a tél, ami ugye jóval több, mint 1-2 hét, így komoly felkészülést igényel, a lehető legtöbb szempontból. Nem csak fizikailag kell felkészülni a finn télre, meleg ruhákkal, szöges télugimuval az autóra, hanem kifogyhatatlan mennyiségű hobbival, ötlettel, és tervekkel, hiszen október közepén elmegy a nap, és május közepéig kettőnél több alkalommal nem is fogunk találkozni vele, ami nagyon sok ember számára igazán megterhelő tud lenni, ha nem foglalja el magát hasznos, és értékes tennivalókkal.
 
 ![Hideg reggel](./images/hideg.png)
 
-## Kirándulás 
+## Kirándulás
 
 A fenti hideggel kapcsolatos beveztővel éles konktrasztban állhat a kirándulás, azonban a finnországi természet télen, olyankor is gyönyörű, amikor a hőmérséklet alulról súrolja a -20 C-fokot. 
 
@@ -48,7 +49,7 @@ Egy hétvégi stockholmi hajóút nagyjából 6 óra stokcholmi időtöltést je
 
 Tallin esetében hasonló a helyzet, oda is érdemes 1-2 éjszakára menni, a tallini óváros az év minden szakaszában – így télen is – gyönyörű, és valamilyen kúltúrális, vagy könnyűzenei programot mindig találni.
 
-##Lappföld 
+##Lappföld
 
 Lappföld, és annak északabbi részei, az északki sarkkörtől még 250 km-re északra található természet a világ egyik talán az ember által legkevésbé érintett területe. 
 

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link } from 'gatsby'
 import Social from './Social';
 import { rhythm, scale } from '../utils/typography'
@@ -8,7 +9,6 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
-
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -23,7 +23,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,              
+              color: `inherit`,
             }}
             to={`/`}
           >
@@ -65,7 +65,7 @@ class Layout extends React.Component {
         {header}
         {children}
         <footer>
-          2020, <a href="https://richardzilahi.hu">richardzilahi</a>.
+          {new Date().getFullYear()}, <a href="https://richardzilahi.hu">richardzilahi</a>.
           <Social />
         </footer>
       </div>

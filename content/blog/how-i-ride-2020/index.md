@@ -5,6 +5,7 @@ tags:
  - 'code, en'
 categories: [coding]
 thumbnail: ./../images/slack.jpg
+isPublic: true
 ---
 
 This is a quick review about how I have been working on the projects I’ve been involved in. Either professional projects at my full time job, or my personal project I did just for myself.  This will discuss technologies I choose, solutions, settings, and more. Bare with me.
@@ -14,9 +15,9 @@ Here’s a short list of contents I wish to cover in this article.
 1) IDE
 2) IDE Settings & Extensions
 3) Project setup
-5) Eslint
-6) Husky
-4) Git (& branches)
+4) Eslint
+5) Husky
+6) Git (& branches)
 7) Technologies
 8) Frontend
 9) Backend

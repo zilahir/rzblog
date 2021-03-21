@@ -4,15 +4,16 @@ date: 2019-03-06 14:00:26
 tags:
  - 'code, en'
 categories: [coding]
+isPublic: true
 ---
 
-##How to write efficient CSS? 
+## How to write efficient CSS?
 
 As a fullstack developer, I do often write `CSS`, and sadly more often see badly thought designed and implemented `CSS` codes.
 
 The lack of using any [`preprocessors`]() is one thing, but the general problem is way multifarious. The reason I decided to come up with this article is to help developers create more organized, scalable and better `CSS`
 
-###Use SASS
+### Use SASS
 
 Despite there are other well known preprocessors out there, I found SASS is the best among them, but this is personal preferences really. I like using the `$` to assing variables, while I found a bit weird do the same by `@` in LESS. This is a tiny difference indeed, but this continues throughout the whole language of SASS, I've simply found it more consistent. But then again, this is a personal preference. 
 1.
