@@ -15,6 +15,7 @@ function Bio() {
             style={{
               display: `flex`,
               marginBottom: rhythm(2.5),
+              color: '#ffffff'
             }}
           >
             <img src={ZilahirProfile} style={
@@ -30,11 +31,11 @@ function Bio() {
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>                
                 I do tweet.
-              </a>              
+              </a>
               <span style={{marginLeft: `10px`}}>
               Wanna contact me? Drop me an <a href="mailto:zilahi@gmail.com">email</a>.
               </span>
-            </p>              
+            </p>
           </div>
         )
       }}
