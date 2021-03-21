@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Social from './Social';
 import { rhythm, scale } from '../utils/typography'
+import '../styles/layout.css'
 
 class Layout extends React.Component {
   render() {
@@ -38,6 +39,7 @@ class Layout extends React.Component {
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
             marginBottom: rhythm(-1),
+            color: '#ffffff'
           }}
         >
           <Link
@@ -64,7 +66,7 @@ class Layout extends React.Component {
       >
         {header}
         {children}
-        <footer>
+        <footer style={{ color: '#ffffff' }}>
           {new Date().getFullYear()}, <a href="https://richardzilahi.hu">richardzilahi</a>.
           <Social />
         </footer>

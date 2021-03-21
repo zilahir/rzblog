@@ -10,20 +10,20 @@ import { rhythm, scale } from '../utils/typography'
 import { UnPublished } from '../components/UnPublished'
 
 const PostContainer = styled.div`
-      color: initial;
+      color: #fff;
       h2, h3 {
-        color: #ff69b4;
-      }
-      pre {
-        // background-color: #fdfaf6;
-      }
-      code {
-        font-size: 16px;
+        color: #ff9cce;
       }
       aside {
         background-color: #ffeeba;
         padding: 10px;
         margin-bottom: 30px;
+      }
+      blockquote {
+        background: #ffb6db;
+        padding: 2rem;
+        box-shadow: 0 0 20px 10px rgb(0 0 0 / 10%);
+        border-left: 8px solid #ff69b4;
       }
     `;
 
@@ -43,7 +43,9 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(0),
+            color: '#ff69b4',
+            textTransform: 'uppercase',
           }}
         >
           {post.frontmatter.date}

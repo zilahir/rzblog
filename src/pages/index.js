@@ -27,14 +27,15 @@ class BlogIndex extends React.Component {
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
+                    color: '#ff9cce'
                   }}
                 >
-                  <Link style={{ boxShadow: `none`, color: `#ff69b4` }} to={node.fields.slug}>
+                  <Link style={{ boxShadow: `none`, color: `inherit` }} to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date} {node.fields.readingTime.text}</small>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                <small style={{ color: '#ff69b4', fontSize: 16, }}>{node.frontmatter.date} {node.fields.readingTime.text}</small>
+                <p style={{ color: "#fff"  }} dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </div>
             )
           }
