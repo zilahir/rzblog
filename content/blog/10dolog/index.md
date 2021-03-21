@@ -4,9 +4,10 @@ tags:
   - 'finnország, suomi'
 categories: [finnország, hun]
 date: 2018-05-20 09:59:00
+isPublic: true
 ---
-## 2. javított kiadás.
 
+## 2. javított kiadás
 
 Olvastam Anita posztját a [határátkelőn](http://hataratkelo.blog.hu/2018/04/10/tiz_utalatos_dolog_finnorszagban) és minden túlzás nélkül, bátran ki merem jelenteni, hogy mélységesen felháborított. Normál esetben, teljes közönnyel olvasok el ilyen, és ehhez hasonló értekezéseket, ez alkalommal azonban, képtelen vagyok szó nélkül hagyni a dolgot, ezért úgy döntöttem, hogy rendet teszek a fejekben. Legalábbis az övében.
 

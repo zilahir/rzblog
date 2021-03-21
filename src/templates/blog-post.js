@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -13,11 +14,10 @@ const PostContainer = styled.div`
         color: #ff69b4;
       }
       pre {
-        background-color: #fdfaf6;
+        // background-color: #fdfaf6;
       }
       code {
         font-size: 16px;
-        color: #b3568b;
       }
       aside {
         background-color: #ffeeba;
@@ -30,8 +30,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext    
-    
+    const { previous, next } = this.props.pageContext
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />

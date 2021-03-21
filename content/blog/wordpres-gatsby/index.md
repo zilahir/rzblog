@@ -4,15 +4,16 @@ date: 2019-02-25 11:37:09
 tags:
  - 'code, en'
 categories: [coding]
+isPublic: true
 ---
 
-FME is stands for `Finnországi Magyarok Egyesülete`, (`Association of Hungarians in Finland` // `Suomen Unkarilaisten Yhdistys`), and I was just elected as a board member in the beginning of this year. 
+FME is stands for `Finnországi Magyarok Egyesülete`, (`Association of Hungarians in Finland` // `Suomen Unkarilaisten Yhdistys`), and I was just elected as a board member in the beginning of this year.
 
 Since I am a fullstack developer, I immediately assigned myself to recreate the entire website of the association from scratch. 
 
-There were no actual deadline set, so I had plenty of time both designing, and making the decision about the stack related questions, and also the implementation itself. Which came quite handy, since I am the only developer among us, so I was not able to outsource any task, it was all me. 
+There were no actual deadline set, so I had plenty of time both designing, and making the decision about the stack related questions, and also the implementation itself. Which came quite handy, since I am the only developer among us, so I was not able to outsource any task, it was all me.
 
-Which fact, actually led from one decision to an other, especially when it came to make decision about the architecture itself. 
+Which fact, actually led from one decision to an other, especially when it came to make decision about the architecture itself.
 
 I was confident going with ReactJs on the frontend, using GatsbyJs to avoid taking care of the server side stuff too much. Since Gatsby’s biggest advantage is the way it deals with the data using `GraphQL`, the second decision was also quite straightforward. I need a CMS. 
 
@@ -39,7 +40,7 @@ Except one: `ACF`. I still do not understand why guys, members of the Wordpress 
 Anyways, using free wordpress.com plan does not allow to have even a single plugin installed, so at this point I needed to decide whether I will give up my principle which states no more nightmares dealing with self hosted Wordpress instances, and just take all those tasks which are comes alongside with this decision, or pay for the plan one above the free, or, find a different approach. 
 
 I am sorry guys at wordpress.com but no, paying for having the possibility to install a plugin which is not a free one itself either, plus considering the fact the functionality that plugin provides should be part of the very basic Wordpress out of the box, I’ve decided I will just to go around the problem. 
- What custom fields I’d need? 
+What custom fields I’d need? 
 
 Since the content on the website are events, report of events, articles, and some other stuff which are very similar to these.
 

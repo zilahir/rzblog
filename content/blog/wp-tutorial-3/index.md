@@ -4,13 +4,14 @@ date: 2019-01-09 23:42:26
 tags:
  - 'code, hu'
 categories: [coding]
+isPublic: true
 ---
 
-##Minimal unit tesztelés wordpress alatt
+## Minimal unit tesztelés wordpress alatt
 
-Az előző két részben nem csináltunk többet, csak felépítettünk egy fejlesztői környezetet, használtunk `git`-et, `docker`-t, `webpack`-et, `bitbucket-pipelines`-t, `heroku`, írtunk `git hooks` scripteket, stb. 
+Az előző két részben nem csináltunk többet, csak felépítettünk egy fejlesztői környezetet, használtunk `git`-et, `docker`-t, `webpack`-et, `bitbucket-pipelines`-t, `heroku`, írtunk `git hooks` scripteket, stb.
 
-Ebben a részben megnézünk néhány nagyon `basic` tesztelést, hogyan lehetünk egy picivel biztosabbak abban, hogy a `deploy`-olt szájtunk  rendben, elindul, nem hasal el, `js`, és `scss` kódjaink rendben vannak, stb. 
+Ebben a részben megnézünk néhány nagyon `basic` tesztelést, hogyan lehetünk egy picivel biztosabbak abban, hogy a `deploy`-olt szájtunk  rendben, elindul, nem hasal el, `js`, és `scss` kódjaink rendben vannak, stb.
 
 Egy `feedback`-ben, a [Wordpress fejlesztők és felhasználók](https://www.facebook.com/groups/wpcsoport/?ref=br_rs&fb_dtsg_ag=AQx8XajeFRP3XaV9pG6lgphwNbivKNfvroPTZr5krkTeNg%3AAQybXuMgFDV9-3cFKODdyq5BoQYvvxtW1Ou48MuC9ur9ZQ&jazoest=28219) csoportban felmerült egy kérdés, hogy _miért is jó ez az egész_, úgyhogy mielőtt belevágunk a mai cikkbe, szeretnék erre reagálni néhány mondatban. 
 

@@ -1,6 +1,6 @@
 ---
 title: Hey Google, I want to buy holy water!
-date: 2020-12-04 01:03:11
+date: 2021-12-04 01:03:11
 tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
@@ -57,7 +57,7 @@ So I have started investigating this request. By going further, and checking the
 
 So this is a `PUT` request, and the `URL` looks like the following:
 
-```
+```javascript
 https://www.k-ruoka.fi/kr-api/order-drafts/
 138e6952-25b3-4242-9851-8f229535f47b/
 update?storeId=N106&clientUpdatedPSD2=1
@@ -171,8 +171,8 @@ The idea was the following:
 
 Where Google calls an API, passes the spoken argument, which is the `customProductName` (_ketchup_), finds the `K-Ruoka` `productId`, and adds it to my custom shopping list, which by the way has the following `Schema`:
 
-```
-const shoppingListSchema = new Schema({
+```javascript
+const ShoppingList = new Schema({
   createdAt: String,
   isFullFilled: Boolean,
   id: String,
@@ -181,11 +181,11 @@ const shoppingListSchema = new Schema({
     ref: 'Product'
   }]
 })
-``` 
+```
 
 To make my, and Google's life eaier, I will always have *1* open shopping list, and I control that with a simple `Boolean`, on the `isFullFilled` property. I have a guard in my own `API` which will return `500` if there's no open shoppping list, saying, I need to create one first. This is just my own preferneces, really, either I need to delete an open shopping list, of place the order, so I am not gonna get all messed up, with different shopping lists.
 
-```
+```javascript
 ShoppingModel.getLastUnFullfilledShoppingListId()
     .then(result => {
       if (result === null) {
@@ -205,7 +205,7 @@ Of course, to achieve all this, I needed to have some UI, where I can search for
 
 For the search `API`, I have creaed a wrapper function again, using `axios`, which cancallable requests, so I can type and wait for the response:
 
-```
+```javascript
 export const makeRequestCreator = (): any => {
   let source: any;
   return (apiEndpoint: string, params: any) => {
