@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -25,6 +26,8 @@ const PostContainer = styled.div`
         margin-bottom: 30px;
       }
     `;
+
+deckDeckGoHighlightElement()
 
 class BlogPostTemplate extends React.Component {
   render() {

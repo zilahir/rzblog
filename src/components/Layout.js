@@ -1,14 +1,10 @@
 import React from 'react'
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+
 import { Link } from 'gatsby'
 import Social from './Social';
 import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    deckDeckGoHighlightElement()
-  }
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`

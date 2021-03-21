@@ -11,7 +11,7 @@ isPublic: true
 In the previous post I have described about the beginning of my journey with my smarthome.
 In this post I'll take a step further, and I will walk you through, how I automated ordering groceris from the finnish [k-ruoka](https://www.k-ruoka.fi) online store.
 
-![K-Citymarket](./images/cover.jpg)
+![SmartHome](./images/cover.jpg)
 
 K-Citymarket is just like any other only grocery shop. You can browse withing stores, products, place an order, and get them by home delivery. It's not just like that, it works exactly like any other webshop.
 In the previous blogpost in my `smarthome` series, I have been talking about Google's home assistant. Just like in that one, this will inlucde `Google Assitant` too!
