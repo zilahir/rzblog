@@ -4,12 +4,12 @@ date: 2020-12-04 01:03:11
 tags:
  - 'code, en, smarthome'
 categories: [coding, smarthome]
-isPublic: false
+isPublic: true
 #thumbnail: ./../images/smarthome_1.jpg
 ---
 
 In the previous post I have described about the beginning of my journey with my smarthome.
-In this post I'll take a stap further, and I will walk you through, how I automated ordering groceris from the finnish [k-ruoka](https://www.k-ruoka.fi) online store.
+In this post I'll take a step further, and I will walk you through, how I automated ordering groceris from the finnish [k-ruoka](https://www.k-ruoka.fi) online store.
 
 ![K-Citymarket](./images/cover.jpg)
 
@@ -31,7 +31,7 @@ So there was nothing else here really to do, but to figure out how does their on
 
 And guess what? *There was*.
 
-## The idea
+## The idea
 
 So, let's see the basics, from the very beginning, what I want to achieve here: 
 
@@ -73,19 +73,19 @@ This definitely handles our basket.
 
 This must be our basket id, which looks like a `uuid`.
 
-`update`, means we are updating our basket. 
+`update`, means we are updating our basket.
 
 `storeId=N106` our chosen store, for example `Espoo, Iso Omena`
 
 Well, this looks pretty easy, let's save it for later, but it seems I am able to pragmatically add products to my basket.
 
-Let's observe now the payload of this request: 
+Let's observe now the payload of this request:
 
 ![K-Ruoka Payload](./images/kruoka_additem_payload.png)
 
 Well this is pretty straightforward, this is an `Array` of products.
 
-So what I need to do here agin? 
+So what I need to do here agin?
 
 > Being able to add procuts, to a basket, pragmatically, (by calling some _custom_ API)
 
@@ -93,11 +93,11 @@ So what I need to do here agin?
 
 To figure out how to do this, i needed to figure out how to get a `productId`, of a product, I want to add.
 
-This is again, just some very basics of `reverse engineering`. I did the same thing again, started to use their own search, to look for different products, and observe the requests. 
+This is again, just some very basics of `reverse engineering`. I did the same thing again, started to use their own search, to look for different products, and observe the requests.
 
 ![K-Ruoka Search](./images/kruoka_search.png)
 
-I just permormed a simple search, looking for _suklaa_ (🇬🇧 chocolate), 
+I just permormed a simple search, looking for _suklaa_ (🇬🇧 chocolate),
 
 and observing the `network` tab:
 
@@ -105,7 +105,7 @@ and observing the `network` tab:
 
 And as I expected, there's some request to the backend, which handles the search request.
 
-Let's see also it's playload: 
+Let's see also it's playload:
 
 ![K-Ruoka Search API Payload](./images/kruoka_search_payload.png)
 
@@ -121,7 +121,7 @@ Woahh! This looks like something we actually needs.
 
 This is how one product's object looks like. We can also obtain the `ID` of the product, as well as localized names, which well be especially important for us, since I want to tell the product name to `Google Assistant` to add it to the shopping list.
 
-Turns out, the localized names are not just the _names_ it also includes quantity, and some _types_ so at this part, to proeed, I needed to think a bit: 
+Turns out, the localized names are not just the _names_ it also includes quantity, and some _types_ so at this part, to proeed, I needed to think a bit:
 
 ```
 english: "Fazer dark chocolate 200g"
@@ -129,13 +129,13 @@ finnish: "Fazer Tumma suklaa suklaalevy 200g"
 swedish: "Fazer mörkchoklad 200g dark choco"
 ```
 
-Of course, I don't want to say something like: 
+Of course, I don't want to say something like:
 
 > Hey Google, add _1 Fazer dark chocolate 200g to my shopping list
 
-First of all, who remembers that, and I had some concerns Google will actually understand that, yet alone, find it's productId, even with the `API. 
+First of all, who remembers that, and I had some concerns Google will actually understand that, yet alone, find it's productId, even with the `API.
 
-Then my thinking went back to the original prolem. I want to automate the grocery shopping. We are usually buying the same stuff: 
+Then my thinking went back to the original prolem. I want to automate the grocery shopping. We are usually buying the same stuff:
 
 1) bread
 2) eggs
@@ -165,7 +165,7 @@ const productSchema = new Schema({
 
 Everything is super self explanatory, the `productId` is their own Id, that represents a product, the `productName` is the localized name of the product, and the `customProductName` is who I will refer to this specific product.
 
-The idea was the following: 
+The idea was the following:
 
 >Hey Google, I want to buy ketchnp!
 
@@ -226,7 +226,7 @@ export const makeRequestCreator = (): any => {
 };
 ```
 
-Now I have the same results as I were searcing on the `K-Ruoka` website. I have the product object, including the `ID`, the localized `productName`, and so on. Need to add the item with the desired `customName`: 
+Now I have the same results as I were searcing on the `K-Ruoka` website. I have the product object, including the `ID`, the localized `productName`, and so on. Need to add the item with the desired `customName`:
 
 ![K-Ruoka Add UI](./images/ui_add.png)
 
@@ -255,11 +255,11 @@ After trying out a bunch, I actually ended up with:
 
 > Hé, Googlee! I need to buy #
 
-Need to buy sounds a bit low-level english, but I guess it will do the job, simply, easy to remember, relatively correct, becasue if I am using this command, that meands I actually _need to buy_ that item in question. From the aspects of voice control UX, some high profile, valued user experience desigers would disagree with me, but they usually live in their own miracle world anyway. (🙃 sorry, I usually like UX designers)
+Need to buy sounds a bit low-level english, but I guess it will do the job, simply, easy to remember, relatively correct, becasue if I am using this command, that menas I actually _need to buy_ that item in question.
 
 ## IFTTT
 
-So by being able to say something to the `Google Assistant`, that doesn't want to do anything with my lists added to my Google account, I could continue, with figurig out, how to make `Google Assistant` to make an `API` call, once they processed. After a few searches in Google, Turns out there's a few approaches out there, including using Google Assistant's `SDK`, `Raspberry PI`, etc. These all seeemed pretty complicated to me, just to build an other serivce, that can call an other service. 
+So by being able to say something to the `Google Assistant`, that doesn't want to do anything with my lists added to my Google account, I could continue, with figurig out, how to make `Google Assistant` to make an `API` call, once they processed. After a few searches in Google, Turns out there's a few approaches out there, including using Google Assistant's `SDK`, `Raspberry PI`, etc. These all seeemed pretty complicated to me, just to build an other serivce, that can call an other service.
 
 Nah, there has to be something else. And there was! I found [IFTTT](https://ifttt.com/), which provides a bunch of extremely handy processes.
 
@@ -269,11 +269,9 @@ This is the simple worklow I created in a service using `IFTTT`:
 
 ![IFTTT Flow](./images/adding_item_flow.png)
 
-
-
 ## So where are we now?
 
-1) I am able to search withing `K-Ruoka` producsts, and them with a `customName` property, into my own `mongoDB`.
+1) I am able to search withing `K-Ruoka` products, and them with a `customName` property, into my own `mongoDB`.
 2) I am able to tell `Google Assistant` what I need to buy and to call an `API`, with that specific item.
 3) I have the desired product in my `mongoDB` in a `shoppingList` schema, where the `items` are stored in an `Array`.
 
@@ -297,11 +295,9 @@ By first blink, this looks like an `uuid`.
 
 At this point I needed to figure out how can I add to a basket without using their frontend. So, by simply generating my own `uuid`, using for exampe the [`uuid`](https://www.npmjs.com/package/uuid) npm package.
 
-After generaint an `uuid` I was calling their `draft` `API` with a copied payload from the request: 
+After generaint an `uuid` I was calling their `draft` `API` with a copied payload from the request:
 
-uuid: 
-
-`b0d2eb8c-9408-4638-a1d8-788f7b7e3b3c`
+`uuid: b0d2eb8c-9408-4638-a1d8-788f7b7e3b3c`
 
 payload:
 
@@ -357,7 +353,7 @@ exports.createbasket = () => new Promise((resolve, reject) => {
 })
 ```
 
-I wrapped it into an endpoint in my own `nodeJS` server, and now, by calling that, voilá: 
+I wrapped it into an endpoint in my own `nodeJS` server, and now, by calling that, voilá:
 
 ```
 {
@@ -366,13 +362,13 @@ I wrapped it into an endpoint in my own `nodeJS` server, and now, by calling tha
 }
 ```
 
-I have a `buskedId`. I changed the terminology from `draft` to `basket` that's more straightforward for me. 
+I have a `buskedId`. I changed the terminology from `draft` to `basket` that's more straightforward for me.
 
-And now, by using this `basketId`, i am able to add items pragmatically using the itesm stored in my own `shoppingList` collection: 
+And now, by using this `basketId`, i am able to add items pragmatically using the itesm stored in my own `shoppingList` collection:
 
 ![K-Ruoka Insert To basket](./images/kruoka_insert_to_basket.png)
 
-And while this is great, there's some things to keep in mind. 
+And while this is great, there's some things to keep in mind.
 
 For example we don't know how long these `basketId`s are valid, also we don't know what type of validation they run against the items being inserted to the basket. So instead of keep adding items to the basket, let's create it and add all the items being placed in my own `shoppingList` when I am ready to place the order.
 
@@ -394,18 +390,18 @@ And this returns every piece of data, that represents a `Product`:
 
 ![K-Ruoka Product Response](./images/kruoka_product_response.png)
 
-It's safe to assume I will need all these, when placing the order, since it's also part of the object the frontends sends to the backend, when adding an item to the basket.
+It's safe to assume I will need all these, when placing the order, since it's also part of the object the frontend sends to the backend, when adding an item to the basket.
 
-I don't want to store this in my own database, for 2 reasons: 
+I don't want to store this in my own database, for 2 reasons:
 
 1) useless for my purposes
 2) what if some of the properties has changed between the time I have added to my basket, and the time my order is being placed.
 
 To avoid that, I will create the basket, and add all the items the moment I tell my google assistant, to place the order.
 
-So in my `MongoDB` there is an `Array` of `items`, where the some of the details are present. 
+So in my `MongoDB` there is an `Array` of `items`, where the some of the details are present.
 
-Again: 
+Again:
 
 ```
 const productSchema = new Schema({
@@ -475,6 +471,8 @@ There, there are 2 objects in the array. I kept them closed, as there are a lot 
 
 There's not much left to do, just to create a valid payload of placing an order. There's really not any other way to `reverse engineer` this, except the most obviosus one: I needed to order things, in order to figure out how does it works.
 
-This wasn't a piece of cake, so let's get into it. 
+This wasn't a piece of cake, so let's get into it.
 
-## Placing on order
+### End of Part I
+
+This is not the end of the journey of automating the groceries. I stillll need to palce the order with the very minimum interaction needed from me. If you are interesting, check back here every now and then, or follow me on [https://twitter.com/zilahy](twitter)
